@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CV Love😘</title>
+</head>
+<style type="text/css">
+body{
+background-color:#000;
+color:#0F0;
+font-family:"Courier New";
+font-weight:bold;
+}
+
+th, td{
+    border-color: #0F0;
+    border: 1px solid;
+}
+
+th{
+    color: crimson;
+    border-color: #0F0;
+}
+
+table{
+    border-color: #0F0;
+    border: 1px dashed;
+}
+
+.button_ok{
+    border-radius: 10px;
+    width: 100px;
+    color: #0F0;
+    background: none;
+    border: 1px solid #0F0;
+    text-align: center;
+    margin-top: 20px;
+}
+.button_ok:hover{
+    width: 120px;
+    background-color: indianred;
+}
+
+#btt{
+    float: both;
+    text-align: center;
+    clear: both;
+}
+</style>
+<script language="javascript">
+cusor='_';
+count=0;
+mess="---------------- CV of Dang Bui Xuan "+
+'---------------- <br />'+
+"----------- Introduction "+
+'----------- <br />'+
+' <br />'+
+" I often look to the past to draw lessons for myself as well as to appreciate the present more.<br />"+
+" There is a saying that I really like: 'If we are afraid of failure, it means we have failed'.<br />"+
+"If we don't start, we don't even have a chance to fail. So let's always seize the opportunity and give each other opportunities. <br />"+
+' <br />'+
+"----------- Information "+
+'----------- <br />'+
+' Full name: Bùi Xuân Đặng <br />'+
+' Nickname: Bờm <br />'+
+' Date of birth: 10/11/2000 <br />'+
+' Age: 22 years old <br /> '+
+' Gender: Male <br />'+
+' Home town: Song Phượng - Đan Phượng - Hà Nội - Việt Nam <br/ >'+
+' Height: 170cm <br />'+
+' Weight: 68kg <br />'+
+' Language: Vietnamese, English <br />'+
+' Company: FPT Software <br />'+
+' Job title: Developer <br />'+
+' Study process and work:  <br />'+
+'<table id="study_process">'+
+'  <tr>'+
+'    <th>Work/study unit</th>'+
+'    <th>From - to</th>'+
+'    <th>Note</th>'+
+'  </tr>'+
+'  <tr>'+
+'    <td>Song Phuong primary school</td>'+
+'    <td>2006 - 2011</td>'+
+'    <td>Alone</td>'+
+'  </tr>'+
+'  </tr>'+
+'  <tr>'+
+'    <td>Song Phuong secondary school</td>'+
+'    <td>2011 - 2015</td>'+
+'    <td>Alone</td>'+
+'  </tr>'+
+'  </tr>'+
+'  <tr>'+
+'    <td>Song Phuong high school</td>'+
+'    <td>2015 - 2018</td>'+
+'    <td>Alone</td>'+
+'  </tr>'+
+'  <tr>'+
+'    <td>Hanoi University of Industry</td>'+
+'    <td>2018 - 2022</td>'+
+'    <td>Alone</td>'+
+'  </tr>'+
+'  <tr>'+
+'    <td>FPT Software</td>'+
+'    <td>2022 - Now</td>'+
+'    <td>Alone</td>'+
+'  </tr>'+
+'</table>'+
+' Marital status: Single <br />'+
+' Child: Not yet <br />'+
+' Smoke: Never <br />'+
+' Drink wine: Sometime <br />'+
+' Beliefs: Atheist <br />'+
+' Hobbies: Singing, reading books, cooking, food, gym ... <br />'+
+' Strengths: Delicious cooking, fun, friendly, enthusiastic and hardworking <br />'+
+' Weaknesses: Soft-hearted, shy of girls, sleeps a lot <br />'+
+' Favourite brands/singer: Bức Tường, Đen Vâu, Thùy chi, Dalab, Lynk Lee <br />'+
+' <br />'+
+"----------- Contact "+
+'----------- <br />'+
+' Mobile: 0396479745 / 0776352375 <br />'+
+' Email: dang10112000@gmail.com <br />'+
+' Facebook: https://Facebook/profile.php?id=100027358988824 <br />'+
+' <br />'+
+"----------- Position to apply"+
+'----------- <br />'+
+' Position: I want to apply to be a son-in-law <br />'+
+' Skill: Pamper your lover, Know, Michelin 5 star <br />'+
+' Experience: None :)) <br />'+
+" Slogan: Love when you want to love, don't love because you're lonely :)) <br />"+
+' <br />'+
+' Click here <br />'
+
+
+butt='<a href="accept.html"><button type="button" hre class="button_ok"><h2>Hire</h2></button></a>'
+var x = document.getElementById("key");
+
+function playAudio() {
+  x.play();
+}
+
+function type()
+{
+if (cusor=='_') cusor=' '; else cusor='_';
+document.getElementById('scr').innerHTML=mess.substring(0,count++)+cusor;
+if(count<=mess.length){
+    setTimeout("type()",10);
+}
+else{
+    document.getElementById('butt').innerHTML=butt;
+    x.pause();
+}
+}
+
+</script>
+
+<body onload="type()">
+    <div id="scr" onclick="playAudio()"></div>
+    <div id="butt"></div>
+    <div class="music">
+        <audio autoplay loop id="key">
+            <source src="asset/key.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+</body>
+ 
+</html>
